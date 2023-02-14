@@ -8,6 +8,16 @@ dotnet-boilerplate
   
 ### Notes
 - CMake is used for convenience with cross-platform environment variables sharing
-
+- in *.csproj:
+  - ```xml
+    <PropertyGroup>
+      <OutputType>Exe</OutputType>
+      <TargetFramework>net6.0</TargetFramework>
+      <PublishSingleFile>true</PublishSingleFile>
+      <SelfContained>true</SelfContained>
+      <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+      <PublishReadyToRun>true</PublishReadyToRun>
+    </PropertyGroup>
+    ```
 ### Reference
 - [dotnet command - .NET CLI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet)
