@@ -19,5 +19,9 @@ dotnet-boilerplate
       <PublishReadyToRun>true</PublishReadyToRun>
     </PropertyGroup>
     ```
+### TODOs
+- [ ] clarify self-contained build
+- [ ] Github Action with cache
+
 ### Reference
 - [dotnet command - .NET CLI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet)
