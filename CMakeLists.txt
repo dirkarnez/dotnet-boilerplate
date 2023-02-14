@@ -31,6 +31,8 @@ elseif(${CPK_ACTION} STREQUAL "uninstall")
 elseif(${CPK_ACTION} STREQUAL "run")
     # dotnet 
     execute_process(COMMAND dotnet "run")
+elseif(${CPK_ACTION} STREQUAL "publish")
+    execute_process(COMMAND dotnet "publish" "-r" "win-x64")
 # elseif(${CPK_ACTION} STREQUAL "init")
 # 	# app + lib
 
