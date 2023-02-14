@@ -22,12 +22,9 @@ echo %CD_LINUX%
 
 cd %~dp0
 
-if exist build rmdir /s /q build
-
 cmake.exe --no-warn-unused-cli ^
 -G"MinGW Makefiles" ^
 -DCMAKE_BUILD_TYPE=Debug ^
--DCPK_PROJECT="%CD_LINUX%" ^
 -DCPK_ACTION="%1" ^
 -DCPK_ACTION_TARGET="%2" ^
 -B./build &&^
